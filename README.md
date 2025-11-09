@@ -47,6 +47,7 @@ This lab applies two clustering algorithms—**K-Means** and **K-Medoids (PAM)**
 - Examined feature distributions and correlations
 - Applied standardization for clustering algorithms
 
+
 ### Step 2: K-Means Clustering
 **Algorithm Details:**
 - Implementation: sklearn.cluster.KMeans
@@ -102,6 +103,7 @@ This lab applies two clustering algorithms—**K-Means** and **K-Medoids (PAM)**
 
 ## Results
 
+![output](WineDataSet.png)
 ### K-Means Performance
 | Metric | Value | Interpretation |
 |--------|-------|----------------|
@@ -109,6 +111,7 @@ This lab applies two clustering algorithms—**K-Means** and **K-Medoids (PAM)**
 | **Adjusted Rand Index** | 0.897 | Strong agreement with true wine classes (89.7% match) |
 | **Cluster Sizes** | Varies | Relatively balanced distribution across clusters |
 
+![output](K-Means.png)
 **Strengths Observed:**
 - Fast convergence (typically < 10 iterations)
 - Clear cluster boundaries in PCA projection
@@ -127,6 +130,7 @@ This lab applies two clustering algorithms—**K-Means** and **K-Medoids (PAM)**
 | **Adjusted Rand Index** | 0.821 | Good agreement with true classes (82.1% match) |
 | **Cluster Sizes** | Varies | Similar distribution to K-Means |
 
+![output](K-Medoids.png)
 **Strengths Observed:**
 - Medoids are actual wine samples (interpretable)
 - More robust to outliers in testing
@@ -151,6 +155,7 @@ This lab applies two clustering algorithms—**K-Means** and **K-Medoids (PAM)**
 
 **Overall Winner:** K-Means for this dataset (better metrics, faster)
 
+![output](Comparison).png)
 ---
 
 ## Insights and Interpretation
@@ -164,19 +169,19 @@ This lab applies two clustering algorithms—**K-Means** and **K-Medoids (PAM)**
 ### When Each Algorithm Excels
 
 **Use K-Means when:**
-- ✓ Dataset is large (>1000 samples)
-- ✓ Clusters are roughly spherical and similar in size
-- ✓ Data is clean with minimal outliers
-- ✓ Speed is critical
-- ✓ Using Euclidean distance metric
+- Dataset is large (>1000 samples)
+- Clusters are roughly spherical and similar in size
+- Data is clean with minimal outliers
+- Speed is critical
+- Using Euclidean distance metric
 
 **Use K-Medoids when:**
-- ✓ Dataset contains outliers or noise
-- ✓ Need actual data points as cluster representatives
-- ✓ Interpretability is important (e.g., "representative wines")
-- ✓ Using non-Euclidean distance metrics
-- ✓ Dataset is small-to-medium (<5000 samples)
-- ✓ Robustness more important than speed
+- Dataset contains outliers or noise
+- Need actual data points as cluster representatives
+- Interpretability is important (e.g., "representative wines")
+- Using non-Euclidean distance metrics
+- Dataset is small-to-medium (<5000 samples)
+- Robustness more important than speed
 
 ### Real-World Applications for Wine Dataset
 
