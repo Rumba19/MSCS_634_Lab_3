@@ -155,7 +155,7 @@ This lab applies two clustering algorithms—**K-Means** and **K-Medoids (PAM)**
 
 **Overall Winner:** K-Means for this dataset (better metrics, faster)
 
-![output](Comparison).png)
+![output](Comparison.png)
 ---
 
 ## Insights and Interpretation
